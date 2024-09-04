@@ -10,10 +10,66 @@ header{
 
 .colorNavBar{
     background-color:rgb(160, 35, 52);
+    padding-left: 1rem;
+}
+
+.navbar-brand img{
+    height: 50px;
+    width: auto;
+}
+
+.nav-item{
+    transition: font-size 0.3s;
+}
+
+.nav-item:hover{
+    font-size: larger;
+    background-color: rgb(130, 43, 43);
+    border-radius: 0.25rem;
+}
+
+.botonHeader{
+    background-color: rgb(160, 35, 52);
+    text-transform: uppercase;
+    font-size: larger;
+    border: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    max-width: 6rem;
+    transition: background-color 0.4s;
+}
+.botonHeader:hover{
+    background-color: rgb(130, 43, 43);
 }
 
 /* Main */
 
 main{
     background-color: rgb(255, 238, 173);
+}
+
+.contenedorMain {
+    background-color: white;
+    border-radius: 0.3rem;
+    box-shadow: -2px 2px 13px -3px rgba(0,0,0,0.75);
+    margin-bottom: 2rem;
+    text-align: center;
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    max-width: 25rem;
+    margin-top: 1rem;
+}
+
+.img-fluid{
+    border-radius: 0.3rem;
+}
+
+@media only screen and (min-width: 575px){
+    .gridResponsive{
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        padding: 2rem;
+    }
 }
