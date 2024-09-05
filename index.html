@@ -10,8 +10,10 @@
     <!-- Linkeo CSS -->
     <link rel="stylesheet" href="./estilos/styles.css">
   </head>
-
+  
+  <!-- Body -->
   <body>
+
     <!-- Header: Navbar con enlaces / Boton menú -->
     <header>
         <nav class="navbar navbar-expand-md bg-body-tertiary p-0 position-fixed w-100">
@@ -48,44 +50,39 @@
             <button class="botonHeader text-white px-3">Menú</button>
           </section>
     </header>
+
     <!-- Main: Muestra rápida con Grid del menú / Elementos destacados -->
     <main>
         <section>
-          <h2 class="text-center py-3 fw-normal text-white fondoH2">Elementos destacados</h2>
+            <h2 class="text-center py-3 fw-normal text-white fondoH2">Elementos destacados</h2>
         </section>
-        <div class="d-flex flex-column align-items-center justify-content-center m-0 gridResponsive">
-          <!-- Item 1 -->
-          <div class="card mb-4 shadow-sm">
-            <img class="card-img-top img-fluid" src="./imagenesCarta/omeletteClasico.jpg" alt="Omelette Clásico">
-            <div class="card-body">
-              <h5 class="card-title">Omelette Clásico</h5>
-              <p class="card-text">Delicioso omelette con huevos frescos.</p>
-              <a href="#" class="btn btn-primary">Ver más</a>
+        <div class="gridResponsive">
+            <!-- Item 1 -->
+            <div class="contenedorMain">
+                <img class="img-fluid" src="./imagenesCarta/omeletteClasico.jpg" alt="Omelette Clásico">
+                <p class="fw-normal h5 p-2 m-0">Omelette Clásico</p>
+                <p class="fw-lighter fs-5 p-2">Delicioso omelette con huevos frescos.</p>
+                <a href="#" class="btn btn-warning mb-3">Ver más</a>
             </div>
-          </div>
-      
-          <!-- Item 2 -->
-          <div class="card mb-4 shadow-sm">
-            <img class="card-img-top img-fluid" src="./imagenesCarta/omeletteJamonYQueso.jpg" alt="Omelette J&Q">
-            <div class="card-body">
-              <h5 class="card-title">Omelette J&Q</h5>
-              <p class="card-text">Omelette con jamón de primera y un queso bien fundido.</p>
-              <a href="#" class="btn btn-primary">Ver más</a>
+    
+            <!-- Item 2 -->
+            <div class="contenedorMain">
+                <img class="img-fluid" src="./imagenesCarta/omeletteJamonYQueso.jpg" alt="Omelette J&Q">
+                <p class="fw-normal h5 p-2 m-0">Omelette J&Q</p>
+                <p class="fw-lighter fs-5 p-2">Omelette con jamón de primera y un queso bien fundido.</p>
+                <a href="#" class="btn btn-warning mb-3">Ver más</a>
             </div>
-          </div>
-      
-          <!-- Item 3 -->
-          <div class="card mb-4 shadow-sm">
-            <img class="card-img-top img-fluid" src="./imagenesCarta/omeletteCheeseburguer.jpg" alt="Omelette Cheeseburger">
-            <div class="card-body">
-              <h5 class="card-title">Omelette Cheeseburger</h5>
-              <p class="card-text">Omelette con ingredientes de los más novedosos.</p>
-              <a href="#" class="btn btn-primary">Ver más</a>
+    
+            <!-- Item 3 -->
+            <div class="contenedorMain">
+                <img class="img-fluid" src="./imagenesCarta/omeletteCheeseburguer.jpg" alt="Omelette Cheeseburger">
+                <p class="fw-normal h5 p-2 m-0">Omelette Cheeseburger</p>
+                <p class="fw-lighter fs-5 p-2">Omelette con ingredientes de los más novedosos.</p>
+                <a href="#" class="btn btn-warning mb-3">Ver más</a>
             </div>
-          </div>
         </div>
-      </main>
-      
+    </main>
+    
     <!-- Footer -->
     <footer>
         <section class="container-fluid">
@@ -97,7 +94,7 @@
             <div class="col-xs-12 col-md-6 col-lg-3">
               <p class="text-white h5">Redes</p>
               <div>
-                <section class="d-flex p-3 gap-2"> <!-- Ajusta el gap para mayor espacio entre iconos -->
+                <section class="d-flex p-3 gap-2">
                   <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" class="d-flex align-items-center text-white text-decoration-none">
                     <img src="./imagenesFondo/logoFb.png" alt="Logo Facebook" width="24" height="24" class="me-2">
                   </a>
@@ -111,16 +108,22 @@
               </div>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3">
-              <p class="text-white h5 mt-5">Términos y condiciones</p>
+              <p class="text-white h5">Términos y condiciones</p>
+              <p class="text-secondary h5">Garantías</p>
+              <p class="text-secondary h5">Responsabilidades y usos prohibidos</p>
+              <p class="text-secondary h5">Atención al consumidor</p>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3">
-              <p class="text-white h5 mt-5">Política de privacidad</p>
+              <p class="text-white h5">Política de privacidad</p>
             </div>
             <p class="text-white text-center mt-5 p-1">©Homelette 2024 - Todos los derechos reservados</p>
           </div>
         </section>
       </footer>
 
+    <!-- Scrip de Bootstrap -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
   </body>
 </html>
