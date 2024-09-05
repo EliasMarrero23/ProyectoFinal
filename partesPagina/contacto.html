@@ -41,10 +41,48 @@
             </div>
         </div>  
       </nav>
+      <section class="d-flex flex-column align-items-center justify-content-center h-75 px-3 gap-4">       
+        <h1 class="text-white fw-normal text-center">Si quieres trabajar con nosotros, realizar consultas o darnos tu feedback, esta es la sección. ¡No mordemos!</h1>
+        <p class="text-white fw-lighter text-center fs-3">Completa los formularios si deseas contactarte con nosotros</p>
+      </section>
   </header>
+  <!--Main-->
   <main>
-
+    <section class="contacto-section">
+        <h2 class="text-center py-4 fw-normal text-white fw-bold fondoH2">Contáctanos. Para lo que necesites, vamos a estar ahí.</h2>
+        <div class="contact-content">
+            <!-- Reclutamiento -->
+            <div class="contactoInfo">
+                <h3 class="text-primary">¡Únete a nuestro equipo!</h3>
+                <p class="text-muted">Estamos buscando personas apasionadas y talentosas para unirse a nuestro equipo. Si te interesa trabajar con nosotros, envíanos tu CV y una carta de presentación.</p>
+                <a href="mailto:reclutamiento@homelette.com" class="btn btn-primary">Enviar CV</a>
+            </div>
+            
+            <!-- Contacto General -->
+            <div class="formaContacto">
+                <h3 class="text-primary">Contáctanos</h3>
+                <p class="text-muted">Para cualquier consulta, sugerencia o comentario, por favor completa el siguiente formulario o contáctanos a través de nuestros canales.</p>
+                <form action="mailto:contacto@homelette.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea id="message" name="message" class="form-input" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
   </main>
+
+  <!--Footer-->
   <footer>
     <section class="container-fluid">
         <div class="row p-5 bg-dark justify-content-center">

@@ -157,3 +157,324 @@ main {
         padding: 0.5rem 0; 
     }
 }
+
+/* ---- Estilos para la sección de Carta ---- */
+
+.carta-section {
+    background-color: #f8f9fa; 
+    padding: 2rem;
+} 
+
+.carta-section h2 {
+    color: #333; 
+    font-size: 2rem; 
+    margin-bottom: 1.5rem; 
+}
+
+.gridCarta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 1.5rem; 
+}
+
+.plato-item {
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column; 
+    text-align: center; 
+}
+
+.card-img {
+    width: 100%; 
+    height: 200px;
+    object-fit: cover; 
+    border-bottom: 1px solid #ddd; 
+}
+
+.card-body {
+    padding: 1rem; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    gap: 1rem; 
+}
+
+.plato-title {
+    font-size: 1.25rem; 
+    margin: 0; 
+}
+
+.plato-description {
+    color: #555; 
+    font-size: 1rem; 
+}
+
+.btn {
+    background-color: #ffc107; 
+    border: none; 
+    color: #333; 
+    padding: 0.5rem 1rem; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.btn:hover {
+    background-color: #e0a800; 
+}
+
+@media only screen and (min-width: 768px) {
+    .gridCarta {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    }
+}
+
+@media only screen and (min-width: 1067px){
+    .gridCarta{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* ---- Estilos para la sección de Contacto ---- */
+
+.contacto-section {
+    background-color: #f8f9fa; 
+    padding: 2rem; 
+}
+
+.contacto-section h2 {
+    color: #333; 
+    font-size: 2rem; 
+    margin-bottom: 1.5rem; 
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+    align-items: center; 
+}
+
+.contactoInfo, .formaContacto {
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 2rem; 
+    width: 100%;
+    max-width: 600px; 
+    text-align: center; 
+}
+
+.contactoInfo h3, .formaContacto h3 {
+    color: #007bff; 
+    margin-bottom: 1rem; 
+}
+
+.contactoInfo p, .formaContacto p {
+    color: #555; 
+    margin-bottom: 1rem; 
+}
+
+.btn-primary {
+    background-color: #007bff; 
+    color: #fff; 
+    border: none; 
+    padding: 0.75rem 1.5rem; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    display: inline-block;  
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; 
+}
+
+.form-group {
+    margin-bottom: 1.5rem; 
+}
+
+.form-label {
+    display: block; 
+    margin-bottom: 0.5rem; 
+}
+
+.form-input {
+    width: 100%; 
+    padding: 0.75rem; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+}
+
+textarea.form-input {
+    resize: vertical; 
+}
+
+@media only screen and (max-width: 768px) {
+    .contact-content {
+        flex-direction: column; /* Pone los bloques en una columna en pantallas pequeñas */
+    }
+}
+
+/* ---- Estilos para la sección de Nosotros ---- */
+
+
+.nosotros-section {
+    background-color: #f8f9fa; 
+    padding: 2rem; 
+}
+
+.nosotros-section h2 {
+    color: #333; 
+    font-size: 2rem; 
+    margin-bottom: 1.5rem; 
+}
+
+.nosotros-content {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 2rem; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.nosotros-img {
+    display: flex;
+    justify-content: center; 
+}
+
+.nosotros-img img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.nosotros-text {
+    text-align: center; 
+}
+
+.nosotros-text h3 {
+    color: #007bff; 
+    margin-top: 1rem; 
+    margin-bottom: 0.5rem; 
+}
+
+.nosotros-text p {
+    color: #555; 
+    margin-bottom: 1.5rem; 
+    line-height: 1.6; 
+}
+
+/* Diseño responsivo para pantallas más grandes */
+@media (min-width: 768px) {
+    .nosotros-content {
+        grid-template-columns: 1fr 1fr; 
+        align-items: start; 
+    }
+    
+    .nosotros-text {
+        text-align: left; 
+    }
+}
+
+/* ---- Estilos para la sección de Novedades ---- */
+
+
+.novedades-section {
+    background-color: #f8f9fa; 
+    padding: 2rem;
+}
+
+.novedades-section h2 {
+    color: #333; 
+    font-size: 2rem; 
+    margin-bottom: 1.5rem; 
+}
+
+.novedades-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+}
+
+.nuevos-platos, .noticias-homelette {
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 1.5rem; 
+}
+
+.nuevos-platos h3, .noticias-homelette h3 {
+    color: #007bff; 
+    margin-bottom: 1rem; 
+}
+
+.plato-list, .noticias-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.plato-item, .noticia-item {
+    display: flex;
+    gap: 1rem; 
+    align-items: center; 
+    background-color: #f8f9fa; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    padding: 1rem; 
+}
+
+.plato-img {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+.plato-info {
+    flex: 1; 
+}
+
+.plato-title {
+    font-size: 1.2rem; 
+    margin: 0.5rem 0; 
+}
+
+.plato-description {
+    color: #555; 
+}
+
+.noticia-date {
+    color: #888; 
+    font-size: 0.9rem; 
+    margin: 0.5rem 0; 
+}
+
+.noticia-title {
+    font-size: 1.2rem; 
+    margin: 0.5rem 0; 
+}
+
+.noticia-description {
+    color: #555; 
+}
+
+@media (min-width: 768px) {
+    .novedades-content {
+        flex-direction: row; 
+        gap: 2rem; 
+    }
+
+    .nuevos-platos, .noticias-homelette {
+        flex: 1; 
+    }
+
+    .plato-list, .noticias-list {
+        gap: 2rem; 
+    }
+}
