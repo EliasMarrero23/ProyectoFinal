@@ -51,10 +51,10 @@ main {
 
   .gridResponsive {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 1rem;
     place-items: center;
-    padding: 2rem;
+
 }
 
   .contenedorMain {
@@ -108,7 +108,7 @@ main {
 
 /* Media Querys*/
 
-@media only screen and (min-width: 575px){
+@media only screen and (min-width: 531px){
     .gridResponsive{
         display: grid !important;
         grid-template-columns: repeat(3, 1fr);
