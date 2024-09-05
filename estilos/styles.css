@@ -44,32 +44,83 @@ header{
 
 /* Main */
 
-main{
-    background-color: rgb(255, 238, 173);
+main {
+    background-color: #f8f9fa; /* Color de fondo claro */
+    padding: 20px;
+  }
+  
+  .fondoH2 {
+    background-color: #343a40; /* Fondo oscuro para el título */
+    padding: 10px;
+    border-radius: 5px; /* Esquinas redondeadas */
+  }
+  
+  .card {
+    width: 100%;
+    max-width: 300px; /* Ancho máximo para las tarjetas */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Esquinas redondeadas para las tarjetas */
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición para hover */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Efecto de escala al pasar el cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra adicional */
+  }
+  
+  .card-img-top {
+    border-bottom: 1px solid #dee2e6; /* Línea divisoria entre la imagen y el contenido */
+  }
+  
+  .card-body {
+    background-color: #ffffff; /* Fondo blanco para el cuerpo de la tarjeta */
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem; /* Tamaño de fuente para el título */
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1rem; /* Tamaño de fuente para el texto */
+  }
+  
+  .btn-primary {
+    background-color: #007bff; /* Color del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas para el botón */
+    padding: 10px 20px; /* Padding para el botón */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el cursor */
+  }
+  
+
+/* Footer */
+
+.colorH2{
+    background-color: rgb(255, 173, 96);
 }
 
-.contenedorMain {
-    background-color: white;
-    border-radius: 0.3rem;
-    box-shadow: -2px 2px 13px -3px rgba(0,0,0,0.75);
-    margin-bottom: 2rem;
-    text-align: center;
-    height: 90%;
-    width: 90%;
-    object-fit: cover;
-    max-width: 25rem;
-    margin-top: 1rem;
+.logoRedes{
+    max-width: 34px;
+    max-height: 34px;
 }
 
-.img-fluid{
-    border-radius: 0.3rem;
-}
+
+
 
 @media only screen and (min-width: 575px){
     .gridResponsive{
         display: grid !important;
         grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
+        place-items: center;
+        align-items: center;
+        height: 90%;
         padding: 2rem;
-    }
+        margin: 0rem;     
+    } 
 }
