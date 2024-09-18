@@ -1,480 +1,516 @@
+@charset "UTF-8";
 /* Header */
-
-header{
-    background-image: url(../imagenesFondo/omeletteFondo2.jpg);
-    height: 95vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+header {
+  background-image: url(../imagenesFondo/omeletteFondo2.jpg);
+  height: 95vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
-.colorNavBar{
-    background-color:rgb(160, 35, 52);
-    padding-left: 1rem;
+header .colorNavBar {
+  background-color: rgb(160, 35, 52);
+  padding-left: 1rem;
 }
-
-.navbar-brand img{
-    height: 50px;
-    width: auto;
+header .navbar-brand img {
+  height: 50px;
+  width: auto;
 }
-
-.nav-item{
-    transition: font-size 0.3s;
+header .nav-item {
+  transition: font-size 0.3s;
 }
-
-.nav-item:hover{
-    font-size: larger;
-    background-color: rgb(130, 43, 43);
-    border-radius: 0.25rem;
+header .nav-item:hover {
+  font-size: larger;
+  background-color: rgb(130, 43, 43);
+  border-radius: 0.25rem;
 }
-
-.botonHeader{
-    background-color: rgb(160, 35, 52);
-    text-transform: uppercase;
-    font-size: larger;
-    border: 1rem;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    max-width: 6rem;
-    transition: background-color 0.4s;
+header .botonHeader {
+  background-color: rgb(160, 35, 52);
+  text-transform: uppercase;
+  font-size: larger;
+  border: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  max-width: 6rem;
+  transition: background-color 0.4s;
+  transition: transform 0.3s;
 }
-.botonHeader:hover{
-    background-color: rgb(130, 43, 43);
+header .botonHeader:hover {
+  background-color: rgb(130, 43, 43);
+  transform: scale(1.3);
 }
 
 /* Main */
-
 main {
-    background-color: #f8f9fa; /* Color de fondo claro */
-    padding: 20px;
-  }
-
-  .gridResponsive {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 1rem;
-    place-items: center;
-
+  background-color: #f8f9fa;
+  padding: 20px;
 }
-
-  .contenedorMain {
+main .gridResponsive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+  place-items: center;
+}
+@media only screen and (min-width: 531px) {
+  main .gridResponsive {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: start;
+    height: 90%;
+    padding: 2rem;
+    margin: 0rem;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  main .gridResponsive {
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    justify-content: center;
+    align-content: center;
+    padding: 2rem;
+    gap: 1.5rem;
+    height: auto;
+  }
+  main .gridResponsive .contenedorMain {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: 100%;
-    max-width: 300px;
+    height: 100%;
+  }
+  main .gridResponsive .contenedorMain img {
+    width: 100%;
     height: auto;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  main .gridResponsive .contenedorMain p {
+    margin: 0;
+    padding: 0.5rem 0;
+  }
 }
-  
-  .fondoH2 {
-    background-color: rgb(160, 71, 71); 
-    padding: 10px;
-    border-radius: 5px; 
-  }
-
-  .img-fluid{
-    max-width: 100%; 
-    height: auto;
-  }
-
-  .btn-warning {
-    border: none; 
-    border-radius: 5px; 
-    padding: 10px 20px; 
-    transition: background-color 0.4s;
-  }
-  
-  .btn-warning:hover {
-    background-color: rgb(214, 173, 39); 
-  }
-  
+main .contenedorMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+main .fondoH2 {
+  background-color: rgb(160, 71, 71);
+  padding: 10px;
+  border-radius: 5px;
+}
+main .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+main .btn-warning {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color 0.4s;
+  transition: transform 0.3s;
+}
+main .btn-warning:hover {
+  background-color: rgb(214, 173, 39);
+  transform: scale(1.1);
+}
 
 /* Footer */
-
-.colorH2{
-    background-color: rgb(255, 173, 96);
+.colorH2 {
+  background-color: rgb(255, 173, 96);
 }
 
-.logoRedes{
-    max-width: 34px;
-    max-height: 34px;
+.logoRedes {
+  max-width: 34px;
+  max-height: 34px;
 }
 
-
-/* Media Querys*/
-
-@media only screen and (min-width: 531px){
-    .gridResponsive{
-        display: grid !important;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: center;
-        align-items: start;
-        align-items: center;
-        height: 90%;
-        padding: 2rem;
-        margin: 0rem; 
-        gap: 1rem;    
-    } 
-}
-
-@media only screen and (min-width: 1000px) {
-    .gridResponsive {
-        display: grid !important;
-        grid-template-columns: repeat(3, 1fr); 
-        place-items: center; 
-        justify-content: center; 
-        align-content: center; 
-        padding: 2rem; 
-        gap: 1.5rem; 
-        height: auto; 
-    }
-    
-    .gridResponsive .contenedorMain {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        justify-content: center; 
-        text-align: center; 
-        width: 100%; 
-        height: 100%; 
-    }
-    
-    .gridResponsive .contenedorMain img {
-        width: 100%; 
-        height: auto; 
-        max-height: 200px;
-        object-fit: cover; 
-        margin-bottom: 1rem; 
-    }
-
-    .gridResponsive .contenedorMain p {
-        margin: 0;
-        padding: 0.5rem 0; 
-    }
-}
-
-/* ---- Estilos para la sección de Carta ---- */
-
-.carta-section {
-    background-color: #f8f9fa; 
-    padding: 2rem;
-} 
-
-.carta-section h2 {
-    color: #333; 
-    font-size: 2rem; 
-    margin-bottom: 1.5rem; 
-}
-
-.gridCarta {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    gap: 1.5rem; 
-}
-
-.plato-item {
-    background-color: #fff; 
-    border: 1px solid #ddd; 
-    border-radius: 8px; 
-    overflow: hidden; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    display: flex;
-    flex-direction: column; 
-    text-align: center; 
-}
-
-.card-img {
-    width: 100%; 
-    height: 200px;
-    object-fit: cover; 
-    border-bottom: 1px solid #ddd; 
-}
-
-.card-body {
-    padding: 1rem; 
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    gap: 1rem; 
-}
-
-.plato-title {
-    font-size: 1.25rem; 
-    margin: 0; 
-}
-
-.plato-description {
-    color: #555; 
-    font-size: 1rem; 
-}
-
-.btn {
-    background-color: #ffc107; 
-    border: none; 
-    color: #333; 
-    padding: 0.5rem 1rem; 
-    border-radius: 5px; 
-    cursor: pointer; 
-}
-
-.btn:hover {
-    background-color: #e0a800; 
-}
-
+/* Media Queries */
 @media only screen and (min-width: 768px) {
-    .gridCarta {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    }
+  .gridCarta {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
-
-@media only screen and (min-width: 1067px){
-    .gridCarta{
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1rem;
-    }
+@media only screen and (min-width: 919px) {
+  .gridCarta {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+}
+/* ---- Estilos para la sección de Carta ---- */
+.carta-section {
+  background-color: #f8f9fa;
+  padding: 2rem;
+}
+.carta-section h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.carta-section .gridCarta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.carta-section .gridCarta .plato-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.carta-section .gridCarta .plato-item .card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+.carta-section .gridCarta .plato-item .card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.carta-section .gridCarta .plato-item .card-body .plato-title {
+  font-size: 1.25rem;
+  margin: 0;
+}
+.carta-section .gridCarta .plato-item .card-body .plato-description {
+  color: #555;
+  font-size: 1rem;
 }
 
 /* ---- Estilos para la sección de Contacto ---- */
-
 .contacto-section {
-    background-color: #f8f9fa; 
-    padding: 2rem; 
+  background-color: #f8f9fa;
+  padding: 2rem;
 }
-
 .contacto-section h2 {
-    color: #333; 
-    font-size: 2rem; 
-    margin-bottom: 1.5rem; 
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
-
-.contact-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem; 
-    align-items: center; 
+.contacto-section .contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
 }
-
-.contactoInfo, .formaContacto {
-    background-color: #fff; 
-    border: 1px solid #ddd; 
-    border-radius: 8px; 
-    padding: 2rem; 
-    width: 100%;
-    max-width: 600px; 
-    text-align: center; 
+.contacto-section .contact-content .contactoInfo,
+.contacto-section .contact-content .formaContacto {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
 }
-
-.contactoInfo h3, .formaContacto h3 {
-    color: #007bff; 
-    margin-bottom: 1rem; 
+.contacto-section .contact-content .contactoInfo h3,
+.contacto-section .contact-content .formaContacto h3 {
+  color: #007bff;
+  margin-bottom: 1rem;
 }
-
-.contactoInfo p, .formaContacto p {
-    color: #555; 
-    margin-bottom: 1rem; 
+.contacto-section .contact-content .contactoInfo p,
+.contacto-section .contact-content .formaContacto p {
+  color: #555;
+  margin-bottom: 1rem;
 }
-
-.btn-primary {
-    background-color: #007bff; 
-    color: #fff; 
-    border: none; 
-    padding: 0.75rem 1.5rem; 
-    border-radius: 5px; 
-    text-decoration: none; 
-    display: inline-block;  
+.contacto-section .contact-content .btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s;
 }
-
-.btn-primary:hover {
-    background-color: #0056b3; 
+.contacto-section .contact-content .btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.3);
 }
-
-.form-group {
-    margin-bottom: 1.5rem; 
+.contacto-section .contact-content .form-group {
+  margin-bottom: 1.5rem;
 }
-
-.form-label {
-    display: block; 
-    margin-bottom: 0.5rem; 
+.contacto-section .contact-content .form-group .form-label {
+  display: block;
+  margin-bottom: 0.5rem;
 }
-
-.form-input {
-    width: 100%; 
-    padding: 0.75rem; 
-    border: 1px solid #ddd; 
-    border-radius: 5px; 
+.contacto-section .contact-content .form-group .form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
-
-textarea.form-input {
-    resize: vertical; 
+.contacto-section .contact-content .form-group .form-input.textarea {
+  resize: vertical;
 }
-
 @media only screen and (max-width: 768px) {
-    .contact-content {
-        flex-direction: column; /* Pone los bloques en una columna en pantallas pequeñas */
-    }
+  .contacto-section .contact-content {
+    flex-direction: column;
+  }
 }
 
 /* ---- Estilos para la sección de Nosotros ---- */
-
-
 .nosotros-section {
-    background-color: #f8f9fa; 
-    padding: 2rem; 
+  background-color: #f8f9fa;
+  padding: 2rem;
 }
-
 .nosotros-section h2 {
-    color: #333; 
-    font-size: 2rem; 
-    margin-bottom: 1.5rem; 
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
-
-.nosotros-content {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 2rem; 
-    align-items: center; 
-    justify-content: center; 
+.nosotros-section .nosotros-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }
-
-.nosotros-img {
-    display: flex;
-    justify-content: center; 
+.nosotros-section .nosotros-content .nosotros-img {
+  display: flex;
+  justify-content: center;
 }
-
-.nosotros-img img {
-    max-width: 100%; 
-    height: auto; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+.nosotros-section .nosotros-content .nosotros-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-.nosotros-text {
-    text-align: center; 
+.nosotros-section .nosotros-content .nosotros-text {
+  text-align: center;
 }
-
-.nosotros-text h3 {
-    color: #007bff; 
-    margin-top: 1rem; 
-    margin-bottom: 0.5rem; 
+.nosotros-section .nosotros-content .nosotros-text h3 {
+  color: #007bff;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
-
-.nosotros-text p {
-    color: #555; 
-    margin-bottom: 1.5rem; 
-    line-height: 1.6; 
+.nosotros-section .nosotros-content .nosotros-text p {
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
 }
-
-/* Diseño responsivo para pantallas más grandes */
 @media (min-width: 768px) {
-    .nosotros-content {
-        grid-template-columns: 1fr 1fr; 
-        align-items: start; 
-    }
-    
-    .nosotros-text {
-        text-align: left; 
-    }
+  .nosotros-section .nosotros-content {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+  .nosotros-section .nosotros-content .nosotros-text {
+    text-align: left;
+  }
 }
 
 /* ---- Estilos para la sección de Novedades ---- */
-
-
 .novedades-section {
-    background-color: #f8f9fa; 
-    padding: 2rem;
+  background-color: #f8f9fa;
+  padding: 2rem;
 }
-
 .novedades-section h2 {
-    color: #333; 
-    font-size: 2rem; 
-    margin-bottom: 1.5rem; 
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
-
-.novedades-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem; 
+.novedades-section .novedades-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-
-.nuevos-platos, .noticias-homelette {
-    background-color: #fff; 
-    border: 1px solid #ddd; 
-    border-radius: 8px; 
-    padding: 1.5rem; 
-}
-
-.nuevos-platos h3, .noticias-homelette h3 {
-    color: #007bff; 
-    margin-bottom: 1rem; 
-}
-
-.plato-list, .noticias-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.plato-item, .noticia-item {
-    display: flex;
-    gap: 1rem; 
-    align-items: center; 
-    background-color: #f8f9fa; 
-    border: 1px solid #ddd; 
-    border-radius: 8px; 
-    padding: 1rem; 
-}
-
-.plato-img {
-    width: 100px; 
-    height: 100px; 
-    object-fit: cover; 
-    border-radius: 5px; 
-}
-
-.plato-info {
-    flex: 1; 
-}
-
-.plato-title {
-    font-size: 1.2rem; 
-    margin: 0.5rem 0; 
-}
-
-.plato-description {
-    color: #555; 
-}
-
-.noticia-date {
-    color: #888; 
-    font-size: 0.9rem; 
-    margin: 0.5rem 0; 
-}
-
-.noticia-title {
-    font-size: 1.2rem; 
-    margin: 0.5rem 0; 
-}
-
-.noticia-description {
-    color: #555; 
-}
-
 @media (min-width: 768px) {
-    .novedades-content {
-        flex-direction: row; 
-        gap: 2rem; 
-    }
-
-    .nuevos-platos, .noticias-homelette {
-        flex: 1; 
-    }
-
-    .plato-list, .noticias-list {
-        gap: 2rem; 
-    }
+  .novedades-section .novedades-content {
+    flex-direction: row;
+    gap: 2rem;
+  }
 }
+.novedades-section .nuevos-platos,
+.novedades-section .noticias-homelette {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.novedades-section .nuevos-platos h3,
+.novedades-section .noticias-homelette h3 {
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+.novedades-section .nuevos-platos .plato-list,
+.novedades-section .nuevos-platos .noticias-list,
+.novedades-section .noticias-homelette .plato-list,
+.novedades-section .noticias-homelette .noticias-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.novedades-section .nuevos-platos .plato-list .plato-item,
+.novedades-section .nuevos-platos .plato-list .noticia-item,
+.novedades-section .nuevos-platos .noticias-list .plato-item,
+.novedades-section .nuevos-platos .noticias-list .noticia-item,
+.novedades-section .noticias-homelette .plato-list .plato-item,
+.novedades-section .noticias-homelette .plato-list .noticia-item,
+.novedades-section .noticias-homelette .noticias-list .plato-item,
+.novedades-section .noticias-homelette .noticias-list .noticia-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+}
+.novedades-section .nuevos-platos .plato-list .plato-item .plato-img,
+.novedades-section .nuevos-platos .plato-list .plato-item .noticia-img,
+.novedades-section .nuevos-platos .plato-list .noticia-item .plato-img,
+.novedades-section .nuevos-platos .plato-list .noticia-item .noticia-img,
+.novedades-section .nuevos-platos .noticias-list .plato-item .plato-img,
+.novedades-section .nuevos-platos .noticias-list .plato-item .noticia-img,
+.novedades-section .nuevos-platos .noticias-list .noticia-item .plato-img,
+.novedades-section .nuevos-platos .noticias-list .noticia-item .noticia-img,
+.novedades-section .noticias-homelette .plato-list .plato-item .plato-img,
+.novedades-section .noticias-homelette .plato-list .plato-item .noticia-img,
+.novedades-section .noticias-homelette .plato-list .noticia-item .plato-img,
+.novedades-section .noticias-homelette .plato-list .noticia-item .noticia-img,
+.novedades-section .noticias-homelette .noticias-list .plato-item .plato-img,
+.novedades-section .noticias-homelette .noticias-list .plato-item .noticia-img,
+.novedades-section .noticias-homelette .noticias-list .noticia-item .plato-img,
+.novedades-section .noticias-homelette .noticias-list .noticia-item .noticia-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.novedades-section .nuevos-platos .plato-list .plato-item .plato-info,
+.novedades-section .nuevos-platos .plato-list .plato-item .noticia-info,
+.novedades-section .nuevos-platos .plato-list .noticia-item .plato-info,
+.novedades-section .nuevos-platos .plato-list .noticia-item .noticia-info,
+.novedades-section .nuevos-platos .noticias-list .plato-item .plato-info,
+.novedades-section .nuevos-platos .noticias-list .plato-item .noticia-info,
+.novedades-section .nuevos-platos .noticias-list .noticia-item .plato-info,
+.novedades-section .nuevos-platos .noticias-list .noticia-item .noticia-info,
+.novedades-section .noticias-homelette .plato-list .plato-item .plato-info,
+.novedades-section .noticias-homelette .plato-list .plato-item .noticia-info,
+.novedades-section .noticias-homelette .plato-list .noticia-item .plato-info,
+.novedades-section .noticias-homelette .plato-list .noticia-item .noticia-info,
+.novedades-section .noticias-homelette .noticias-list .plato-item .plato-info,
+.novedades-section .noticias-homelette .noticias-list .plato-item .noticia-info,
+.novedades-section .noticias-homelette .noticias-list .noticia-item .plato-info,
+.novedades-section .noticias-homelette .noticias-list .noticia-item .noticia-info {
+  flex: 1;
+}
+.novedades-section .nuevos-platos .plato-list .plato-item .plato-info .plato-title,
+.novedades-section .nuevos-platos .plato-list .plato-item .plato-info .noticia-title,
+.novedades-section .nuevos-platos .plato-list .plato-item .noticia-info .plato-title,
+.novedades-section .nuevos-platos .plato-list .plato-item .noticia-info .noticia-title,
+.novedades-section .nuevos-platos .plato-list .noticia-item .plato-info .plato-title,
+.novedades-section .nuevos-platos .plato-list .noticia-item .plato-info .noticia-title,
+.novedades-section .nuevos-platos .plato-list .noticia-item .noticia-info .plato-title,
+.novedades-section .nuevos-platos .plato-list .noticia-item .noticia-info .noticia-title,
+.novedades-section .nuevos-platos .noticias-list .plato-item .plato-info .plato-title,
+.novedades-section .nuevos-platos .noticias-list .plato-item .plato-info .noticia-title,
+.novedades-section .nuevos-platos .noticias-list .plato-item .noticia-info .plato-title,
+.novedades-section .nuevos-platos .noticias-list .plato-item .noticia-info .noticia-title,
+.novedades-section .nuevos-platos .noticias-list .noticia-item .plato-info .plato-title,
+.novedades-section .nuevos-platos .noticias-list .noticia-item .plato-info .noticia-title,
+.novedades-section .nuevos-platos .noticias-list .noticia-item .noticia-info .plato-title,
+.novedades-section .nuevos-platos .noticias-list .noticia-item .noticia-info .noticia-title,
+.novedades-section .noticias-homelette .plato-list .plato-item .plato-info .plato-title,
+.novedades-section .noticias-homelette .plato-list .plato-item .plato-info .noticia-title,
+.novedades-section .noticias-homelette .plato-list .plato-item .noticia-info .plato-title,
+.novedades-section .noticias-homelette .plato-list .plato-item .noticia-info .noticia-title,
+.novedades-section .noticias-homelette .plato-list .noticia-item .plato-info .plato-title,
+.novedades-section .noticias-homelette .plato-list .noticia-item .plato-info .noticia-title,
+.novedades-section .noticias-homelette .plato-list .noticia-item .noticia-info .plato-title,
+.novedades-section .noticias-homelette .plato-list .noticia-item .noticia-info .noticia-title,
+.novedades-section .noticias-homelette .noticias-list .plato-item .plato-info .plato-title,
+.novedades-section .noticias-homelette .noticias-list .plato-item .plato-info .noticia-title,
+.novedades-section .noticias-homelette .noticias-list .plato-item .noticia-info .plato-title,
+.novedades-section .noticias-homelette .noticias-list .plato-item .noticia-info .noticia-title,
+.novedades-section .noticias-homelette .noticias-list .noticia-item .plato-info .plato-title,
+.novedades-section .noticias-homelette .noticias-list .noticia-item .plato-info .noticia-title,
+.novedades-section .noticias-homelette .noticias-list .noticia-item .noticia-info .plato-title,
+.novedades-section .noticias-homelette .noticias-list .noticia-item .noticia-info .noticia-title {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+.novedades-section .nuevos-platos .plato-list .plato-item .plato-info .plato-description,
+.novedades-section .nuevos-platos .plato-list .plato-item .plato-info .noticia-description,
+.novedades-section .nuevos-platos .plato-list .plato-item .noticia-info .plato-description,
+.novedades-section .nuevos-platos .plato-list .plato-item .noticia-info .noticia-description,
+.novedades-section .nuevos-platos .plato-list .noticia-item .plato-info .plato-description,
+.novedades-section .nuevos-platos .plato-list .noticia-item .plato-info .noticia-description,
+.novedades-section .nuevos-platos .plato-list .noticia-item .noticia-info .plato-description,
+.novedades-section .nuevos-platos .plato-list .noticia-item .noticia-info .noticia-description,
+.novedades-section .nuevos-platos .noticias-list .plato-item .plato-info .plato-description,
+.novedades-section .nuevos-platos .noticias-list .plato-item .plato-info .noticia-description,
+.novedades-section .nuevos-platos .noticias-list .plato-item .noticia-info .plato-description,
+.novedades-section .nuevos-platos .noticias-list .plato-item .noticia-info .noticia-description,
+.novedades-section .nuevos-platos .noticias-list .noticia-item .plato-info .plato-description,
+.novedades-section .nuevos-platos .noticias-list .noticia-item .plato-info .noticia-description,
+.novedades-section .nuevos-platos .noticias-list .noticia-item .noticia-info .plato-description,
+.novedades-section .nuevos-platos .noticias-list .noticia-item .noticia-info .noticia-description,
+.novedades-section .noticias-homelette .plato-list .plato-item .plato-info .plato-description,
+.novedades-section .noticias-homelette .plato-list .plato-item .plato-info .noticia-description,
+.novedades-section .noticias-homelette .plato-list .plato-item .noticia-info .plato-description,
+.novedades-section .noticias-homelette .plato-list .plato-item .noticia-info .noticia-description,
+.novedades-section .noticias-homelette .plato-list .noticia-item .plato-info .plato-description,
+.novedades-section .noticias-homelette .plato-list .noticia-item .plato-info .noticia-description,
+.novedades-section .noticias-homelette .plato-list .noticia-item .noticia-info .plato-description,
+.novedades-section .noticias-homelette .plato-list .noticia-item .noticia-info .noticia-description,
+.novedades-section .noticias-homelette .noticias-list .plato-item .plato-info .plato-description,
+.novedades-section .noticias-homelette .noticias-list .plato-item .plato-info .noticia-description,
+.novedades-section .noticias-homelette .noticias-list .plato-item .noticia-info .plato-description,
+.novedades-section .noticias-homelette .noticias-list .plato-item .noticia-info .noticia-description,
+.novedades-section .noticias-homelette .noticias-list .noticia-item .plato-info .plato-description,
+.novedades-section .noticias-homelette .noticias-list .noticia-item .plato-info .noticia-description,
+.novedades-section .noticias-homelette .noticias-list .noticia-item .noticia-info .plato-description,
+.novedades-section .noticias-homelette .noticias-list .noticia-item .noticia-info .noticia-description {
+  color: #555;
+}
+.novedades-section .nuevos-platos .plato-list .plato-item .plato-info .noticia-date,
+.novedades-section .nuevos-platos .plato-list .plato-item .noticia-info .noticia-date,
+.novedades-section .nuevos-platos .plato-list .noticia-item .plato-info .noticia-date,
+.novedades-section .nuevos-platos .plato-list .noticia-item .noticia-info .noticia-date,
+.novedades-section .nuevos-platos .noticias-list .plato-item .plato-info .noticia-date,
+.novedades-section .nuevos-platos .noticias-list .plato-item .noticia-info .noticia-date,
+.novedades-section .nuevos-platos .noticias-list .noticia-item .plato-info .noticia-date,
+.novedades-section .nuevos-platos .noticias-list .noticia-item .noticia-info .noticia-date,
+.novedades-section .noticias-homelette .plato-list .plato-item .plato-info .noticia-date,
+.novedades-section .noticias-homelette .plato-list .plato-item .noticia-info .noticia-date,
+.novedades-section .noticias-homelette .plato-list .noticia-item .plato-info .noticia-date,
+.novedades-section .noticias-homelette .plato-list .noticia-item .noticia-info .noticia-date,
+.novedades-section .noticias-homelette .noticias-list .plato-item .plato-info .noticia-date,
+.novedades-section .noticias-homelette .noticias-list .plato-item .noticia-info .noticia-date,
+.novedades-section .noticias-homelette .noticias-list .noticia-item .plato-info .noticia-date,
+.novedades-section .noticias-homelette .noticias-list .noticia-item .noticia-info .noticia-date {
+  color: #888;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+@media (min-width: 768px) {
+  .novedades-section .nuevos-platos,
+  .novedades-section .noticias-homelette {
+    flex: 1;
+  }
+  .novedades-section .plato-list,
+  .novedades-section .noticias-list {
+    gap: 2rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
