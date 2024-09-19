@@ -46,38 +46,30 @@ main {
 }
 main .gridResponsive {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, 1fr);
   gap: 1rem;
   place-items: center;
 }
 @media only screen and (min-width: 531px) {
   main .gridResponsive {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: start;
-    height: 90%;
     padding: 2rem;
-    margin: 0rem;
   }
 }
 @media only screen and (min-width: 1000px) {
   main .gridResponsive {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    place-items: center;
-    justify-content: center;
-    align-content: center;
     padding: 2rem;
     gap: 1.5rem;
-    height: auto;
   }
   main .gridResponsive .contenedorMain {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
-    width: 100%;
-    height: 100%;
   }
   main .gridResponsive .contenedorMain img {
     width: 100%;
@@ -93,12 +85,10 @@ main .gridResponsive {
 }
 main .contenedorMain {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 100%;
+  align-items: center;
+  flex-direction: column;
   max-width: 300px;
-  height: auto;
   background: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -143,6 +133,7 @@ main .btn-warning:hover {
 }
 @media only screen and (min-width: 919px) {
   .gridCarta {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
   }
@@ -159,7 +150,7 @@ main .btn-warning:hover {
 }
 .carta-section .gridCarta {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, 1fr);
   gap: 1.5rem;
 }
 .carta-section .gridCarta .plato-item {
@@ -206,9 +197,10 @@ main .btn-warning:hover {
 }
 .contacto-section .contact-content {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 2rem;
-  align-items: center;
 }
 .contacto-section .contact-content .contactoInfo,
 .contacto-section .contact-content .formaContacto {
@@ -278,7 +270,7 @@ main .btn-warning:hover {
 }
 .nosotros-section .nosotros-content {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
   align-items: center;
   justify-content: center;
@@ -286,6 +278,7 @@ main .btn-warning:hover {
 .nosotros-section .nosotros-content .nosotros-img {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .nosotros-section .nosotros-content .nosotros-img img {
   max-width: 100%;
@@ -308,7 +301,8 @@ main .btn-warning:hover {
 }
 @media (min-width: 768px) {
   .nosotros-section .nosotros-content {
-    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: start;
   }
   .nosotros-section .nosotros-content .nosotros-text {
@@ -367,6 +361,8 @@ main .btn-warning:hover {
 .novedades-section .noticias-homelette .noticias-list .plato-item,
 .novedades-section .noticias-homelette .noticias-list .noticia-item {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   gap: 1rem;
   align-items: center;
   background-color: #f8f9fa;
@@ -507,8 +503,10 @@ main .btn-warning:hover {
   .novedades-section .noticias-homelette {
     flex: 1;
   }
-  .novedades-section .plato-list,
-  .novedades-section .noticias-list {
+  .novedades-section .nuevos-platos .plato-list,
+  .novedades-section .nuevos-platos .noticias-list,
+  .novedades-section .noticias-homelette .plato-list,
+  .novedades-section .noticias-homelette .noticias-list {
     gap: 2rem;
   }
 }
