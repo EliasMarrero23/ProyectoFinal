@@ -1,0 +1,13 @@
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+    .gridCarta {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+  }
+  
+  @media only screen and (min-width: 919px) {
+    .gridCarta {
+      @include grid(4);
+      gap: 2rem;
+    }
+  }

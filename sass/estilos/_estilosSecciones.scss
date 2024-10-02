@@ -1,0 +1,289 @@
+/* ---- Estilos para la sección de Carta ---- */
+.carta-section {
+    background-color: $background-color;
+    padding: 2rem;
+  
+    h2 {
+      color: #333;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .gridCarta {
+      @include grid(auto-fit);
+      gap: 1.5rem;
+  
+      .plato-item {
+        background-color: $white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: $shadow;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+  
+        .card-img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          border-bottom: 1px solid #ddd;
+        }
+  
+        .card-body {
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 1rem;
+  
+          .plato-title {
+            font-size: 1.25rem;
+            margin: 0;
+          }
+  
+          .plato-description {
+            color: #555;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  
+  /* ---- Estilos para la sección de Contacto ---- */
+  .contacto-section {
+    background-color: $background-color;
+    padding: 2rem;
+  
+    h2 {
+      color: #333;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .contact-content {
+      @include flex-center;
+      flex-direction: column;
+      gap: 2rem;
+  
+      .contactoInfo,
+      .formaContacto {
+        background-color: $white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 2rem;
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+  
+        h3 {
+          color: #007bff;
+          margin-bottom: 1rem;
+        }
+  
+        p {
+          color: #555;
+          margin-bottom: 1rem;
+        }
+      }
+  
+      .btn-primary {
+        background-color: #007bff;
+        color: $white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 5px;
+        text-decoration: none;
+        display: inline-block;
+        @include transition(transform, 0.3s);
+  
+        &:hover {
+          background-color: #0056b3;
+          transform: scale(1.3);
+        }
+      }
+  
+      .form-group {
+        margin-bottom: 1.5rem;
+  
+        .form-label {
+          display: block;
+          margin-bottom: 0.5rem;
+        }
+  
+        .form-input {
+          width: 100%;
+          padding: 0.75rem;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+  
+          &.textarea {
+            resize: vertical;
+          }
+        }
+      }
+    }
+  
+    @media only screen and (max-width: 768px) {
+      .contact-content {
+        flex-direction: column;
+      }
+    }
+  }
+  
+  /* ---- Estilos para la sección de Nosotros ---- */
+  .nosotros-section {
+    background-color: $background-color;
+    padding: 2rem;
+  
+    h2 {
+      color: #333;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .nosotros-content {
+      @include grid(1);
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+  
+      .nosotros-img {
+        @include flex-center;
+  
+        img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 8px;
+          box-shadow: $shadow;
+        }
+      }
+  
+      .nosotros-text {
+        text-align: center;
+  
+        h3 {
+          color: #007bff;
+          margin-top: 1rem;
+          margin-bottom: 0.5rem;
+        }
+  
+        p {
+          color: #555;
+          margin-bottom: 1.5rem;
+          line-height: 1.6;
+        }
+      }
+    }
+  
+    @media (min-width: 768px) {
+      .nosotros-content {
+        @include grid(2);
+        align-items: start;
+  
+        .nosotros-text {
+          text-align: left;
+        }
+      }
+    }
+  }
+  
+  /* ---- Estilos para la sección de Novedades ---- */
+  .novedades-section {
+    background-color: $background-color;
+    padding: 2rem;
+  
+    h2 {
+      color: #333;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .novedades-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+  
+      @media (min-width: 768px) {
+        flex-direction: row;
+        gap: 2rem;
+      }
+    }
+  
+    .nuevos-platos,
+    .noticias-homelette {
+      background-color: $white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: $shadow;
+  
+      h3 {
+        color: #007bff;
+        margin-bottom: 1rem;
+      }
+  
+      .plato-list,
+      .noticias-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+  
+        .plato-item,
+        .noticia-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 1rem;
+          align-items: center;
+          background-color: $background-color;
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          padding: 1rem;
+  
+          .plato-img,
+          .noticia-img {
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+          }
+  
+          .plato-info,
+          .noticia-info {
+            flex: 1;
+  
+            .plato-title,
+            .noticia-title {
+              font-size: 1.2rem;
+              margin: 0.5rem 0;
+            }
+  
+            .plato-description,
+            .noticia-description {
+              color: #555;
+            }
+  
+            .noticia-date {
+              color: #888;
+              font-size: 0.9rem;
+              margin: 0.5rem 0;
+            }
+          }
+        }
+      }
+    }
+  
+    @media (min-width: 768px) {
+      .nuevos-platos,
+      .noticias-homelette {
+        flex: 1;
+  
+        .plato-list,
+        .noticias-list {
+          gap: 2rem;
+        }
+      }
+    }
+  }

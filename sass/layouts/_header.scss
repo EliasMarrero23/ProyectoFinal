@@ -1,0 +1,45 @@
+/* Header */
+header {
+    background-image: url(../imagenesFondo/omeletteFondo2.jpg);
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    .colorNavBar {
+      background-color: $primary-color;
+      padding-left: 1rem;
+    }
+  
+    .navbar-brand img {
+      height: 50px;
+      width: auto;
+    }
+  
+    .nav-item {
+      @include transition(font-size, 0.3s);
+  
+      &:hover {
+        font-size: larger;
+        background-color: $hover-color;
+        border-radius: 0.25rem;
+      }
+    }
+  
+    .botonHeader {
+      background-color: $primary-color;
+      text-transform: uppercase;
+      font-size: larger;
+      border: 1rem;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      max-width: 6rem;
+      @include transition(background-color, 0.4s);
+      @include transition(transform, 0.3s);
+  
+      &:hover {
+        background-color: $hover-color;
+        transform: scale(1.3);
+      }
+    }
+  }

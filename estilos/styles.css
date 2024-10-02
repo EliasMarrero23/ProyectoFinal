@@ -386,7 +386,7 @@ main .btn-warning:hover {
 .novedades-section .noticias-homelette .noticias-list .plato-item .noticia-img,
 .novedades-section .noticias-homelette .noticias-list .noticia-item .plato-img,
 .novedades-section .noticias-homelette .noticias-list .noticia-item .noticia-img {
-  width: 100px;
+  width: 100%;
   height: 100px;
   object-fit: cover;
   border-radius: 5px;
